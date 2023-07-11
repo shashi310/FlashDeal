@@ -47,9 +47,6 @@ Website URL: https://grand-dasik-526567.netlify.app
 
 ![ordersHistory](https://user-images.githubusercontent.com/68629598/229423190-ea5ba1a0-aa3e-4a29-9f21-abfb7d18ccf5.png)
 
-# Admin Login
-
-![adminLogin](https://user-images.githubusercontent.com/68629598/229423233-fa67b9be-d6fc-4fc4-b72f-9e51ee9d38ee.png)
 
 # Admin Page
 
