@@ -1,0 +1,4 @@
+.carousalContainer::-webkit-scrollbar {
+    width: 0;
+
+}
