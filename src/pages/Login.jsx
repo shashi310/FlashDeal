@@ -18,8 +18,8 @@ const Login = () => {
   const navigate = useNavigate();
 
   let initialState = {
-    id: "",
-    pass: "",
+    id: "shashi@gmail.com",
+    pass: "1234",
   };
 
   const [state, dispatch] = useReducer(loginReducer, initialState);
@@ -93,7 +93,7 @@ const Login = () => {
         console.log(err);
         callingErrorToast(
           "Something went wrong!",
-          "Please check your Email and Password and try again."
+          "Please check your Email and Password and try again"
         );
       })
       .finally(() => {
