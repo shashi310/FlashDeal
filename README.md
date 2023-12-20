@@ -9,6 +9,8 @@ This is a solo project built with react, chakra UI and completed within 5 days. 
 # Netlify Link
 
 Website URL: https://subtle-lollipop-02b2d4.netlify.app/
+
+# API Link
 Backend API URL: https://flashdeal.onrender.com/
 
 
