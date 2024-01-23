@@ -16,6 +16,7 @@ const Login = () => {
   let url = process.env.REACT_APP_LOCAL_URL;
   let toast = useToast();
   const navigate = useNavigate();
+ 
 
   let initialState = {
     id: "shashi@gmail.com",
@@ -69,6 +70,7 @@ const Login = () => {
       .get(`${url}/users/${state.id}`)
       .then((res) => {
         if (res.data.pass == state.pass) {
+          
           callingSuccessToast(
             "Login Success.",
             `Welcome back ${res.data.name}.`

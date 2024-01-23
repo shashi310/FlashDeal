@@ -28,11 +28,12 @@ const UserAndCart = () => {
 
   const [user, setUser] = useState(null);
   const [cartLength, setCartLength] = useState(0);
-
+  const [adminLink, setAdminLink] = useState(false);
   useEffect(() => {
     setUser(localStorage.getItem("user") || null);
     // setCartLength(initialState);
     setCartLength(JSON.parse(localStorage.getItem(user))?.length || 0);
+    setAdminLink(user === "Max");
   }, [user, initialState]);
 
   useEffect(() => {
@@ -53,6 +54,7 @@ const UserAndCart = () => {
   if (location.pathname == "/adminLogin") {
     return "";
   }
+
 
   return (
     <Flex align={"center"}>
@@ -145,7 +147,26 @@ const UserAndCart = () => {
                 <motion.div whileHover={{ translateX: "10px" }}>
                   <Link to={"/orders"}>Orders</Link>
                 </motion.div>
+                
               </Box>
+
+{/* admin */}
+{adminLink && <Box
+                _hover={{
+                  backgroundColor: "RGBA(255, 255, 255, 0.24)",
+                  borderRadius: "6px",
+                }}
+                pb={2}
+                pt={2}
+                mb={"2px"}
+                mt={"2px"}
+              >
+                <motion.div whileHover={{ translateX: "10px" }}>
+                  <Link to={"/admin"}>Admin</Link>
+                </motion.div>
+                
+              </Box>}
+              
               {!user ? (
                 <Button
                   _hover={{
